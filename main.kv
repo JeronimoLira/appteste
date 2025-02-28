@@ -1,0 +1,25 @@
+#:include kv/homepage.kv
+
+FloatLayout:
+    canvas:
+        Rectangle:
+            source: "imagens/sistema/fundo_topo.png"
+            size: self.size
+            pos: self.pos
+    ImageButton:
+        id:id_logotipo
+        pos_hint: {"right": 0.2, "top": 0.95}
+        size_hint: 0.1, 0.1
+        source: "imagens/sistema/logo_ecube.png"
+    ImageButton:
+        id:id_ler_qrcode
+        pos_hint: {"right": 0.9, "top": 0.95}
+        size_hint: 0.1, 0.1
+        source: "imagens/sistema/ler_qrcode.png"
+    ScreenManager:
+        pos_hint: {"right": 1, "top": 0.8}
+        size_hint: 1, 0.8
+        id: screen_manager
+        HomePage:
+            name: "HomePage"
+            id: homepage
