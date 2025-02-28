@@ -21,7 +21,8 @@ class MainApp(App):
 
 
     def on_start(self):
-            pass
+        print("Passei aqui")
+        pass
 
     def build(self):        
         return Builder.load_file("main.kv")
