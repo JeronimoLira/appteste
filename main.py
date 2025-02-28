@@ -21,7 +21,6 @@ class MainApp(App):
 
 
     def on_start(self):
-        print("Passei aqui")
         pass
 
     def build(self):        
